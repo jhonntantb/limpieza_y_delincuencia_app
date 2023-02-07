@@ -10,9 +10,6 @@ export class Complaint {
   @Column()
   location: string;
 
-  @Column('string', { array: true })
-  photos: string[];
-
   @Column('text')
   comments: string;
 

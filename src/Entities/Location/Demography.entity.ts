@@ -41,7 +41,4 @@ export class Demography {
 
   @Column()
   wealthLevel: number;
-
-  // @ManyToOne(() => Country, (country) => country.id)
-  // countryId: Country;
 }
