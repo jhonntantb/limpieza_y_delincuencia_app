@@ -1,5 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-// import { Country } from './country.entity';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
+import { District } from './District.entity';
 
 @Entity()
 export class Demography {
@@ -41,4 +41,7 @@ export class Demography {
 
   @Column()
   wealthLevel: number;
+
+  @ManyToOne(() => District, (district) => district.id)
+  district: District;
 }

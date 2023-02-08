@@ -1,4 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
+import { District } from '../Location/District.entity';
 import { Subcategories } from './Subcategories.entity';
 import { User } from './User.entity';
 
@@ -27,4 +28,7 @@ export class Complaint {
 
   @ManyToOne(() => User, (user) => user.id)
   userId: User;
+
+  @ManyToOne(() => District, (distric) => distric.id)
+  district: District;
 }

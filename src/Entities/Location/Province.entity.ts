@@ -10,5 +10,5 @@ export class Province {
   name: string;
 
   @ManyToOne(() => Department, (department) => department.id)
-  departmentId: Department;
+  department: Department;
 }
