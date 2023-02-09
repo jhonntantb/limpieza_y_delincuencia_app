@@ -1,73 +1,75 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Limpieza-Delincuencia App Backend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## API para obtener estadisticas y reportes de la información procesada
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Diagrama ER
 
-## Description
+![DER](assets/Diagrama%20ER%20Limpieza%20Delincuencia.png)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Tecnologias
 
-## Installation
+- NodeJS, NestJS
+- TypeScript,
+- ORM: TypeOrm,
+- SQL server
 
-```bash
-$ npm install
+## Run Locally
+
+### 1. Clone repo
+
+```
+$ git https://github.com/jhonntantb/limpieza_y_delincuencia_app
+$ cd limpieza_y_delincuencia_app
 ```
 
-## Running the app
+### 2. Instalar Dependencias
 
-```bash
-# development
-$ npm run start
+- Instalar paquetes y recursos necesarios usados en el proyecto
 
-# watch mode
+```
+$ npm i
+```
+
+## 3. Conectarse a la Base de datos
+
+- En este proyecto se uso una base de datos local, la cual se debe crear antes de iniciar el proyecto
+
+### 4. Crear archivo .env
+
+- Crear archivo .env en la raiz del proyecto
+- Debe contener los siguientes datos:
+
+```
+DB_HOST=localhost
+DB_PORT=1433
+DB_USER=tu_nombre_de_usuario
+DB_PASS=tu_contraseña
+DB_NAME=tu_db
+```
+
+### 5. Iniciar El Proyecto
+
+- El proyecto esta realizado con NestJs, por lo que requiere los siguientes comandos
+
+- Parae jecutarlo como desarrollador y escuche los cambios
+
+```
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+- Para ejecutar el proyecto como se encuentra
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
+$ npm start
+```
+
+### 6. Ver Documentación de la API
+
+- Ejecuta esto en su navegador: http://localhost:8080/docs
+- Click en la ruta
+- Ver Parametros
+- Probar la API
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Contact Developer: [Jhonntan](mailto:Jhonntan.jhonntantb@gmail.com)
