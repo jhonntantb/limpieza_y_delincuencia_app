@@ -8,7 +8,8 @@
 
 ## Tecnologias
 
-- NodeJS, NestJS
+- NodeJS v16.15.1,
+- NestJS
 - TypeScript,
 - ORM: TypeOrm,
 - SQL server
