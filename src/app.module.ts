@@ -13,9 +13,11 @@ import { Department } from './Entities/Location/Department.entity';
 import { District } from './Entities/Location/District.entity';
 import { Province } from './Entities/Location/Province.entity';
 import { Photo } from './Entities/Complaint/Photo.entity';
+import { StatisticsProvince } from './Entities/Complaint/Statistics-Province.entity';
 
 @Module({
   imports: [
+    TypeOrmModule.forFeature([StatisticsProvince]),
     ConfigModule.forRoot({
       isGlobal: true,
     }),
