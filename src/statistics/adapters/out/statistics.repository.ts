@@ -1,3 +1,3 @@
-export interface Statistics {
-  getStatisticsGeneral(): Promise<any>;
+export interface IStatisticsRepository {
+  getStatisticsGeneral(province: string, year: string): Promise<any>;
 }
