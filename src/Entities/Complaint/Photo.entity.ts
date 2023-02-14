@@ -9,9 +9,6 @@ export class Photo {
   @Column()
   url: string;
 
-  @Column()
-  complaintId: string;
-
   @ManyToOne(() => Complaint, (complaint) => complaint.id)
   complaint: Complaint;
 }

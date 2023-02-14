@@ -10,5 +10,5 @@ export class Subcategories {
   name: string;
 
   @ManyToOne(() => Categories, (categories) => categories.id)
-  categoryId: Categories;
+  category: Categories;
 }

@@ -15,7 +15,7 @@ export class Complaint {
   comments: string;
 
   @ManyToOne(() => Subcategories, (subcategories) => subcategories.id)
-  categoryId: number;
+  subCategory: number;
 
   @Column()
   calification: number;
@@ -27,7 +27,7 @@ export class Complaint {
   hour: Date;
 
   @ManyToOne(() => User, (user) => user.id)
-  userId: User;
+  user: User;
 
   @ManyToOne(() => District, (distric) => distric.id)
   district: District;
